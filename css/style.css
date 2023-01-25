@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+}
+
+table,
+td {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.board td {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.board td:hover {
+    background-color: lightsalmon;
+}
+
+.safe {
+    background-color: blue;
+}
+
+.mine {
+    background-color: red;
+}
+
