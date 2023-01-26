@@ -20,16 +20,8 @@ table {
     transition: 0.5s;
 }
 
-
 .board td:hover {
     background-color: lightsalmon;
 }
 
-.safe {
-    background-color: blue;
-}
-
-.mine {
-    background-color: red;
-}
 

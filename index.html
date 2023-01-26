@@ -10,22 +10,30 @@
 </head>
 
 <body onload="onInit()">
+
     <h1>sprint 1 - minesweeper</h1>
-    <!-- <button onclick="onToggleGame(this)">Start</button> -->
+    
+    <div> Num of marked Flags: <span class="flag"></span></div>
+    <div> Num of marked Cells: <span class="marked-cells"></span></div>
 
-<div class="game-levels">
-<!-- <button class="btn" onclick="choseDifficulty(4)"> EASY</button>
-<button  class="btn" onclick="choseDifficulty(8)">MID</button>
-<button class="btn" onclick="choseDifficulty(12)">HARD</button> -->
-</div>
+    <div class="game-levels">
+        <button class="btn" onclick="buildBoard(16, 2)"> EASY</button>
+        <button class="btn" onclick="buildBoard(64, 14)">MID</button>
+        <button class="btn" onclick="buildBoard(144, 32)">HARD</button>
+    </div>
 
-<!-- <span class="timer"></span> -->
+<button class="restart" onclick="restartGame()">RESTART <BUTTON></BUTTON></button>
 
+    <div class="timer">
+        <label id="min">00</label><span>:</span><label id="sec">00</label>
+    </div>
 
     <table>
         <tbody class="board">
         </tbody>
     </table>
+
+    <span>Eli Gal</span>
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
 </body>
