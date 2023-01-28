@@ -4,7 +4,7 @@ function renderBoard(board) {
         strHTML += '<tr>'
         for (var j = 0; j < board[0].length; j++) {
             //var cellIdx = board[i][j].id
-            var cell = 'x'
+            var cell = ''
             var cellType = board[i][j].type
             var minesCount = countMinesNeighbors(i, j, board)
             
