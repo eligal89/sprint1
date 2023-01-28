@@ -164,7 +164,7 @@ function flagCell(elCell, cellI, cellJ) {
         gBoard[cellI][cellJ].isMarddByFlag = false
         gFlagsCounter--
         flagOnRealMine ++
-
+        elCell.innerHTML = ''
         gElFlag.innerText = gFlagsCounter
 
     } else {
@@ -175,7 +175,8 @@ function flagCell(elCell, cellI, cellJ) {
         if (gBoard[cellI][cellJ].isMine) flagOnRealMine++
             else flagOnRealMine --
             console.log('flagOnRealMine', flagOnRealMine);
-        if (flagOnRealMine === gMines.length) alert('heyy');
+        if (flagOnRealMine === gMines.length) console.log('im here');
+        
         if ((flagOnRealMine === gMines.length) && (gNumOfShownCells === gCombinemineAndSafe.length - gMines.length))
             endGame()
     }
