@@ -162,7 +162,6 @@ function flagCell(elCell, cellI, cellJ) {
 
         if (gBoard[cellI][cellJ].isMine) flagOnRealMine--
         gBoard[cellI][cellJ].isMarddByFlag = false
-        elCell.innerHTML = 'x'
         gFlagsCounter--
         flagOnRealMine ++
 
