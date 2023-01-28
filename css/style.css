@@ -1,27 +1,54 @@
 body {
     text-align: center;
+    background-color: rgb(223, 223, 241)  ;
 }
 
-table,
-td {
+table
+ {
     border: 1px solid black;
-}
-
-table {
     border-collapse: collapse;
     margin: auto;
 }
 
 .board td {
     padding: 10px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     transition: 0.5s;
+    
+    border: 3px solid rgb(174, 121, 21);
 }
 
 .board td:hover {
     background-color: lightsalmon;
 }
 
+.marked {
+    background-color: rgb(255, 250, 103);
+}
 
+.game-levels button{
+    background-color: rgb(216, 234, 102) ;
+    border-radius: 30%;
+    padding: 15px ;
+    margin: 10px
+}
+
+.restart {
+    width: 60px;
+    height: 30px;
+    margin: auto;
+    background-color:  rgb(20, 15, 8);
+    margin: 10 px;
+}
+
+/* .safe{
+    background-color: rgb(255, 250, 103); 
+} */
+
+.life-counter {
+    background-color: bisque;
+    margin: 10 px;
+    
+}

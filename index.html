@@ -17,15 +17,14 @@
     <div> Num of marked Cells: <span class="marked-cells"></span></div>
 
     <div class="game-levels">
-        <button class="btn" onclick="buildBoard(16, 2)"> EASY</button>
+        <button class="btn" onclick="buildBoard(16, 2)">EASY</button>
         <button class="btn" onclick="buildBoard(64, 14)">MID</button>
         <button class="btn" onclick="buildBoard(144, 32)">HARD</button>
     </div>
-
-<button class="restart" onclick="restartGame()">RESTART <BUTTON></BUTTON></button>
-
-    <div class="timer">
-        <label id="min">00</label><span>:</span><label id="sec">00</label>
+<button class="restart" onclick="buildBoard(16, 2)">😎</button> 
+    <div>
+        <span class="life-counter"></span>
+        <!-- <label id="min">00</label><span>:</span><label id="sec">00</label> -->
     </div>
 
     <table>
@@ -33,7 +32,7 @@
         </tbody>
     </table>
 
-    <span>Eli Gal</span>
+    <footer>Eli Gal</footer>
     <script src="js/util.js"></script>
     <script src="js/main.js"></script>
 </body>
